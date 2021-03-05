@@ -1,0 +1,15 @@
+plugins:
+  - jekyll-seo-tag
+
+twitter:
+  username: nandiniproothi
+  card: summary
+  
+title: 
+  Home | Nandini Proothi
+
+url: 
+  https://buttery-narrow-blinker.glitch.me
+
+logo:
+  
