@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link type='text/css' href="{{ url_for('static' filename='/styles/index.css') }}" rel='stylesheet'>
+        <link type='text/css' href="{{ url_for('static', filename='/styles/index.css') }}" rel='stylesheet'>
     </head>
     hello!
     <!--
@@ -24,42 +24,6 @@
 
 <div id="error-message"></div>
 
-<script>
-(function() {
-  var stripe = Stripe('pk_live_51IQFMnIVaoq2crjzNTPRaHM8YtwH6WnPk1TUTNhI16gcIMMUHMyVIIG4fjcQ7SRRBIlFz1qGqfVqnLPVKLHdH1K600651UXP1i');
-
-  var checkoutButton = document.getElementById('checkout-button-price_1ISvziIVaoq2crjznFhPL6Hh');
-  checkoutButton.addEventListener('click', function () {
-    /*
-     * When the customer clicks on the button, redirect
-     * them to Checkout.
-     */
-    stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1ISvziIVaoq2crjznFhPL6Hh', quantity: 1}],
-      mode: 'payment',
-      /*
-       * Do not rely on the redirect to the successUrl for fulfilling
-       * purchases, customers may not always reach the success_url after
-       * a successful payment.
-       * Instead use one of the strategies described in
-       * https://stripe.com/docs/payments/checkout/fulfill-orders
-       */
-      successUrl: 'https://nandiniproothi.glitch.me',
-      cancelUrl: 'https://nandiniproothi.glitch.me',
-    })
-    .then(function (result) {
-      if (result.error) {
-        /*
-         * If `redirectToCheckout` fails due to a browser or network
-         * error, display the localized error message to your customer.
-         */
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
 <script type="text/javascript"
          src="{{ url_for('static', filename='index.js') }}"></script>
 </html>
