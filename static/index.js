@@ -1,4 +1,4 @@
-(function() {
+function stripePay() {
     var stripe = Stripe('env.API_KEY');
   
     var checkoutButton = document.getElementById('checkout-button-price_1ISvziIVaoq2crjznFhPL6Hh');
@@ -31,4 +31,4 @@
         }
       });
     });
-  })();
+  }
