@@ -1,6 +1,6 @@
 body {
   background-color: #F5FEFD;
 }
-.card:hover{
-  background-color: #F5FEFD;
+#heading, #heading1{
+  font-family: 'Roboto Mono', monospace;
 }
