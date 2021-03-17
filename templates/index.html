@@ -1,186 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="portfolio website!" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Developer" />
+    <meta name="author" content="Nandini Proothi" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2Ftwt.png?v=1616010659382"
+    />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:alt" content="my avatar: a budding developer" />
+    <meta property="og:title" content="nandini proothi (she/her)" />
+    <meta
+      property="og:description"
+      content="a budding developer, interested in learning! 
+  i like coffee, music, and tech :D"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@smolpkg" />
+    <meta
+      name="twitter:image"
+      content="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2Ftwt.png?v=1616010398489"
+    />
+    <meta name="twitter:image:width" content="300" />
+    <meta name="twitter:image:alt" content="my avatar: a budding developer" />
+    <meta
+      name="twitter:description"
+      content="a budding developer, interested in learning! 
+  i like coffee, music, and tech :D"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="portfolio website!">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Developer">
-  <meta name="author" content="Nandini Proothi">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta property="og:image" content="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2Ftwt.png?v=1616010659382">
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:alt" content="my avatar: a budding developer">
-  <meta property="og:title" content="Nandini Proothi">
+    <!-- All Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      type="text/css"
+      href="{{ url_for('static', filename='styles/index.css') }}"
+      rel="stylesheet"
+    />
+    <!-- add google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- All Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link type="text/css" href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet" />
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">about me</a>
-        </li>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about me</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav me-auto">
+        <a class="navbar-brand" href="#">Nandini Proothi</a>
       </ul>
-    </div>
-    <ul class="navbar-nav me-auto">
-      <a class="navbar-brand" href="#">Nandini Proothi</a>
-    </ul>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">💰</a>
-        </li>
-      </ul>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-  <br>
-  <div class="container-fluid">
-    <div class="ml-4">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">💰</a>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <br />
+    <div class="container-fluid">
+      <div class="ml-4">
+        <div class="row">
+          <h3 id="heading">
+            introduction
+          </h3>
+        </div>
+        <div class="row">
+          <h3 id="heading1">
+            projects
+          </h3>
+        </div>
+      </div>
+      <!-- row starts -->
       <div class="row">
-        <h3>
-          introduction
-        </h3>
-      </div>
-      <div class="row">
-        <h3>
-          projects
-        </h3>
-      </div>
-    </div>
-    <!-- row starts -->
-    <div class="row">
-      <!-- card starts  -->
-      <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #f1615c; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
-          <div class="card-body">
-            <h5 class="card-title">telegram bot</h5>
-            <h6 class="card-subtitle mb-2 text-white"><img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg" height="20px"></h6>
-            <p class="card-text">
-              a telegram bot that provides you with resources on a bunch of topics!
-            </p>
-            <a href="https://github.com/nandiniproothi/icantfindaname-bot" class="card-link">source code</a>
-            <a href="https://t.me/icantfindaname_bot" class="card-link">website</a>
-          </div>
-        </div>
-      </div>
-      <!-- card ended -->
-      <!-- card starts  -->
-      <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #f1a97c; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
-          <div class="card-body">
-            <h5 class="card-title">flask boilerplate</h5>
-            <h6 class="card-subtitle mb-2 text-white"><img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/python.svg" height="20px"> &nbsp; <img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/gnubash.svg" height="20px">
-              &nbsp; <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/flask.svg" height="20px"></h6>
-            <p class="card-text">
-              flask boilerplate for a minimal "hello world" application hosted on glitch
-            </p>
-            <a href="https://github.com/nandiniproothi/flask-boiler-plate" class="card-link">source code</a>
-            <a href="https://flask-boiler-plate.glitch.me/" class="card-link">website</a>
-          </div>
-        </div>
-      </div>
-      <!-- card ended -->
-      <!-- card starts  -->
-      <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #f5e58c; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
-          <div class="card-body">
-            <h5 class="card-title">firebase boilerplate</h5>
-            <h6 class="card-subtitle mb-2 text-white"><img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/firebase.svg" height="20px"> &nbsp; <img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/html5.svg" height="20px">
-              &nbsp; <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/css3.svg" height="20px">&nbsp;
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg" height="20px"></h6>
-            <p class="card-text">
-              firebase web authentication boilerplate code made with html, css, and js
-            </p>
-            <a href="https://github.com/nandiniproothi/firebase-auth-web" class="card-link">source code</a>
-          </div>
-        </div>
-      </div>
-      <!-- card ended -->
-      <!-- card starts  -->
-      <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #a5f564; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
-          <div class="card-body">
-            <h5 class="card-title">lab codes and notes</h5>
-            <h6 class="card-subtitle mb-2 text-white"> <img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/html5.svg" height="20px">
-              &nbsp; <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/css3.svg" height="20px">&nbsp;
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg" height="20px">&nbsp;
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/python.svg" height="20px">
-              &nbsp;
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/markdown.svg" height="20px">
-            </h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="https://github.com/nandiniproothi/itt-lab" class="card-link">lab</a>
-            <a href="https://github.com/nandiniproothi/Semester-VI-Notes" class="card-link">notes</a>
-          </div>
-        </div>
-      </div>
-      <!-- card ended -->
-      <!-- card starts  -->
-      <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #9cd6ff; opacity: 80%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
-          <div class="card-body">
-            <h5 class="card-title">portfolio website</h5>
-            <h6 class="card-subtitle mb-2 text-white"> <img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/html5.svg" height="20px">
-              &nbsp; <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/css3.svg" height="20px">&nbsp;
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg" height="20px">&nbsp;
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/python.svg" height="20px">
-              &nbsp;
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/gnubash.svg" height="20px">
-              &nbsp; <img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/flask.svg" height="20px">
-            </h6>
-            <p class="card-text">
-              a website built to display my portfolio, projects, and achievements (yup, this one right here)
-            </p>
-            <a href="https://github.com/nandiniproothi/portfolio-website" class="card-link">source code</a>
-            <a href="#" class="card-link">link</a>
-          </div>
-        </div>
-      </div>
-      <!-- card ended -->
+        <!-- card starts  -->
+        <div class="col m-2">
+          <div
+            class="card"
+            style="width: 15rem; background-color: #f1615c; opacity: 90%;"
+            onmouseover="this.style.opacity='100%'"
+            onmouseout="this.style.opacity='90%'"
+          >
+            <div class="card-body">
+              <h5 class="card-title">telegram bot</h5>
+              <h6 class="card-subtitle mb-2 text-white">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg"
+                  height="20px"
+                />
+              </h6>
 
-    </div>
-    <!-- row ended -->
-  </div>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-</body>
+              <p class="card-text">
+                a telegram bot that provides you with resources on a bunch of
+                topics!
+              </p>
+              <a
+                href="https://github.com/nandiniproothi/icantfindaname-bot"
+                class="card-link"
+                >source code</a
+              >
+              <a href="https://t.me/icantfindaname_bot" class="card-link"
+                >website</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card ended -->
+        <!-- card starts  -->
+        <div class="col m-2">
+          <div
+            class="card"
+            style="width: 15rem; background-color: #f1a97c; opacity: 90%;"
+            onmouseover="this.style.opacity='100%'"
+            onmouseout="this.style.opacity='90%'"
+          >
+            <div class="card-body">
+              <h5 class="card-title">flask boilerplate</h5>
+              <h6 class="card-subtitle mb-2 text-white">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/python.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/gnubash.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/flask.svg"
+                  height="20px"
+                />
+              </h6>
 
+              <p class="card-text">
+                flask boilerplate for a minimal "hello world" application hosted
+                on glitch
+              </p>
+              <a
+                href="https://github.com/nandiniproothi/flask-boiler-plate"
+                class="card-link"
+                >source code</a
+              >
+              <a href="https://flask-boiler-plate.glitch.me/" class="card-link"
+                >website</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card ended -->
+        <!-- card starts  -->
+        <div class="col m-2">
+          <div
+            class="card"
+            style="width: 15rem; background-color: #f5e58c; opacity: 90%;"
+            onmouseover="this.style.opacity='100%'"
+            onmouseout="this.style.opacity='90%'"
+          >
+            <div class="card-body">
+              <h5 class="card-title">firebase boilerplate</h5>
+              <h6 class="card-subtitle mb-2 text-white">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/firebase.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/html5.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/css3.svg"
+                  height="20px"
+                />&nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg"
+                  height="20px"
+                />
+              </h6>
+
+              <p class="card-text">
+                firebase web authentication boilerplate code made with html,
+                css, and js
+              </p>
+              <a
+                href="https://github.com/nandiniproothi/firebase-auth-web"
+                class="card-link"
+                >source code</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card ended -->
+        <!-- card starts  -->
+        <div class="col m-2">
+          <div
+            class="card"
+            style="width: 15rem; background-color: #a5f564; opacity: 90%;"
+            onmouseover="this.style.opacity='100%'"
+            onmouseout="this.style.opacity='90%'"
+          >
+            <div class="card-body">
+              <h5 class="card-title">lab codes and notes</h5>
+              <h6 class="card-subtitle mb-2 text-white">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/html5.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/css3.svg"
+                  height="20px"
+                />&nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg"
+                  height="20px"
+                />&nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/python.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/markdown.svg"
+                  height="20px"
+                />
+              </h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="https://github.com/nandiniproothi/itt-lab"
+                class="card-link"
+                >lab</a
+              >
+              <a
+                href="https://github.com/nandiniproothi/Semester-VI-Notes"
+                class="card-link"
+                >notes</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card ended -->
+        <!-- card starts  -->
+        <div class="col m-2">
+          <div
+            class="card"
+            style="width: 15rem; background-color: #9cd6ff; opacity: 80%;"
+            onmouseover="this.style.opacity='100%'"
+            onmouseout="this.style.opacity='90%'"
+          >
+            <div class="card-body">
+              <h5 class="card-title">portfolio website</h5>
+              <h6 class="card-subtitle mb-2 text-white">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/html5.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/css3.svg"
+                  height="20px"
+                />&nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/javascript.svg"
+                  height="20px"
+                />&nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/python.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/gnubash.svg"
+                  height="20px"
+                />
+                &nbsp;
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/flask.svg"
+                  height="20px"
+                />
+              </h6>
+              <p class="card-text">
+                a website built to display my portfolio, projects, and
+                achievements (yup, this one right here)
+              </p>
+              <a
+                href="https://github.com/nandiniproothi/portfolio-website"
+                class="card-link"
+                >source code</a
+              >
+              <a href="#" class="card-link">link</a>
+            </div>
+          </div>
+        </div>
+        <!-- card ended -->
+      </div>
+      <!-- row ended -->
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
