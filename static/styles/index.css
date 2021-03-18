@@ -5,3 +5,7 @@ body {
 html{
   scroll-behavior: smooth;
 }
+
+::placeholder{
+  font-size: small;
+}
