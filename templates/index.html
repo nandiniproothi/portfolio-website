@@ -33,7 +33,6 @@ i like coffee, music, and tech :D" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -285,6 +284,66 @@ i like coffee, music, and tech :D" />
           <a target="_" href=""><img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/discord.svg" style=" width: 50px;"></a>
         </button>
       </div>
+    </div>
+    <div class="row">
+      <h2 id="payment" style="font-family: 'Roboto Mono', monospace;">
+        like my work? fund it!
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col m-2">
+      <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-price_1ISvziIVaoq2crjznFhPL6Hh"
+  role="link"
+  type="button"
+>
+  Checkout
+</button>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_live_51IQFMnIVaoq2crjzNTPRaHM8YtwH6WnPk1TUTNhI16gcIMMUHMyVIIG4fjcQ7SRRBIlFz1qGqfVqnLPVKLHdH1K600651UXP1i');
+
+  var checkoutButton = document.getElementById('checkout-button-price_1ISvziIVaoq2crjznFhPL6Hh');
+  checkoutButton.addEventListener('click', function () {
+    /*
+     * When the customer clicks on the button, redirect
+     * them to Checkout.
+     */
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1ISvziIVaoq2crjznFhPL6Hh', quantity: 1}],
+      mode: 'payment',
+      /*
+       * Do not rely on the redirect to the successUrl for fulfilling
+       * purchases, customers may not always reach the success_url after
+       * a successful payment.
+       * Instead use one of the strategies described in
+       * https://stripe.com/docs/payments/checkout/fulfill-orders
+       */
+      successUrl: 'https://linktr.ee/nandiniproothi/success',
+      cancelUrl: 'https://linktr.ee/nandiniproothi/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        /*
+         * If `redirectToCheckout` fails due to a browser or network
+         * error, display the localized error message to your customer.
+         */
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
     </div>
   </div>
   <!-- ml ends -->
