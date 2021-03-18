@@ -2,11 +2,6 @@ body {
   background-color: #F5FEFD;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 ::placeholder{
   font-size: small;
 }
-
