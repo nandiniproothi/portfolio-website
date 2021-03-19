@@ -87,7 +87,7 @@ i like coffee, music, and tech :D" />
           <p>Most of my knowledge comes from building things in <code>Node.js</code>, <code>Python</code>, and
             <code>Flutter</code>, but I'm always interested in exploring and learning other languages!</p>
 
-          <p>I spend most of my days listening to music, reading theory, and scrolling away on <a href="https://twitter.com/smolpkg"><img
+          <p>I spend most of my days listening to music, sipping coffee, trying new technologies, and scrolling away on <a href="https://twitter.com/smolpkg"><img
               src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/twitter.svg" height="17px"></a></p>
 
         </div>
@@ -303,14 +303,15 @@ i like coffee, music, and tech :D" />
   role="link"
   type="button"
 >
-  Checkout
+  click to pay!
 </button>
 
 <div id="error-message"></div>
 
 <script>
+  let api_key = {{ input_from_python | tojson }};
 (function() {
-  var stripe = Stripe('pk_live_51IQFMnIVaoq2crjzNTPRaHM8YtwH6WnPk1TUTNhI16gcIMMUHMyVIIG4fjcQ7SRRBIlFz1qGqfVqnLPVKLHdH1K600651UXP1i');
+  var stripe = Stripe(api_key);
 
   var checkoutButton = document.getElementById('checkout-button-price_1ISvziIVaoq2crjznFhPL6Hh');
   checkoutButton.addEventListener('click', function () {
@@ -328,8 +329,8 @@ i like coffee, music, and tech :D" />
        * Instead use one of the strategies described in
        * https://stripe.com/docs/payments/checkout/fulfill-orders
        */
-      successUrl: 'https://linktr.ee/nandiniproothi/success',
-      cancelUrl: 'https://linktr.ee/nandiniproothi/canceled',
+      successUrl: 'https://nandiniproothi.glitch.me',
+      cancelUrl: 'https://nandiniproothi.glitch.me',
     })
     .then(function (result) {
       if (result.error) {
