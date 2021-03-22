@@ -2,6 +2,6 @@ body {
   background-color: #F5FEFD;
 }
 
-::placeholder{
+::placeholder {
   font-size: small;
 }
