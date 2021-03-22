@@ -20,7 +20,8 @@ print(f"Processor: {my_system.processor}")
 
 @app.route("/")
 def render_static():
-    return render_template("index.html", input_from_python=os.getenv("API_KEY"))
+    return render_template("index.html",
+                           input_from_python=os.getenv("API_KEY"))
 
 
 @app.route("/success")
