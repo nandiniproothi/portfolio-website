@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 from dotenv import load_dotenv
 import os
 
@@ -18,7 +18,6 @@ print(f"Processor: {my_system.processor}")
 @app.route('/')
 def render_static():
     return render_template('index.html', input_from_python = os.getenv('API_KEY'))
-  
 
 @app.route('/success')
 def success():
