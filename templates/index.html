@@ -29,28 +29,28 @@ i like coffee, music, and tech :D" />
 
   <!-- All Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link type="text/css" href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet" />
+  <link type="text/css" href="/static/styles/index.css" rel="stylesheet" />
   <!-- add google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#introduction">about me</a>
-        </li>
-      </ul>
-    </div>
     <ul class="navbar-nav me-auto">
       <a class="navbar-brand" href="#">Nandini Proothi (she/her)</a>
     </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="#introduction">about me</a>
+          </li>
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">projects</a>
         </li>
@@ -59,16 +59,13 @@ i like coffee, music, and tech :D" />
         </li>
       </ul>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    
   </nav>
   <br />
   <div class="container">
     <div class="ml-4">
       <div class="row">
-        <h2 id="introduction" style="font-family: 'Roboto Mono', monospace;">
+        <h2 id="introduction">
           introduction
         </h2>
       </div>
@@ -95,7 +92,7 @@ i like coffee, music, and tech :D" />
         </div>
       </div>
       <div class="row">
-        <h2 id="projects" style="font-family: 'Roboto Mono', monospace;">
+        <h2 id="projects">
           projects
         </h2>
       </div>
@@ -103,8 +100,7 @@ i like coffee, music, and tech :D" />
     <div class="row" id="projects-row">
       <!-- card starts  -->
       <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #cdebf9; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
+        <div class="card odd">
           <div class="card-body">
             <h5 class="card-title">telegram-bot</h5>
             <h6 class="card-subtitle mb-2 text-white">
@@ -124,8 +120,7 @@ i like coffee, music, and tech :D" />
       <!-- card ended -->
       <!-- card starts  -->
       <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #e5ddf3; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
+        <div class="card even">
           <div class="card-body">
             <h5 class="card-title">flask-boilerplate</h5>
             <h6 class="card-subtitle mb-2 text-white">
@@ -149,8 +144,7 @@ i like coffee, music, and tech :D" />
       <!-- card ended -->
       <!-- card starts  -->
       <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #cdebf9; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
+        <div class="card odd">
           <div class="card-body">
             <h5 class="card-title">firebase-boilerplate</h5>
             <h6 class="card-subtitle mb-2 text-white">
@@ -174,8 +168,7 @@ i like coffee, music, and tech :D" />
       <!-- card ended -->
       <!-- card starts  -->
       <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #e5ddf3; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
+        <div class="card even">
           <div class="card-body">
             <h5 class="card-title">lab-codes-notes</h5>
             <h6 class="card-subtitle mb-2 text-white">
@@ -199,8 +192,7 @@ i like coffee, music, and tech :D" />
       <!-- card ended -->
       <!-- card starts  -->
       <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #cdebf9; opacity: 80%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
+        <div class="card odd">
           <div class="card-body">
             <h5 class="card-title">portfolio-website</h5>
             <h6 class="card-subtitle mb-2 text-white">
@@ -227,8 +219,7 @@ i like coffee, music, and tech :D" />
       <!-- card ended -->
       <!-- card starts  -->
       <div class="col m-2">
-        <div class="card" style="width: 15rem; background-color: #e5ddf3; opacity: 90%;"
-          onmouseover="this.style.opacity='100%'" onmouseout="this.style.opacity='90%'">
+        <div class="card even">
           <div class="card-body">
             <h5 class="card-title">What next?</h5>
             <h6 class="card-subtitle mb-2 text-white"></h6>
@@ -250,46 +241,46 @@ i like coffee, music, and tech :D" />
     <br>
     <!-- contact me -->
     <div class="row">
-      <h2 id="contact" style="font-family: 'Roboto Mono', monospace;">
+      <h2 id="contact">
         contact me
       </h2>
     </div>
     <!-- socials -->
     <div class="row">
       <div class="col m-2">
-        <button type="button" class="btn btn-light" style="border-radius: 50px; height: 75px; border: none; width: 75px;">
+        <button type="button" class="btn btn-light">
           <a target="_" href="https://github.com/nandiniproothi"><img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/github.svg" style=" width: 50px;"></a>
         </button>
       </div>
       <div class="col m-2">
-        <button type="button" class="btn btn-light" style="border-radius: 50px; height: 75px; border: none; width: 75px;">
+        <button type="button" class="btn btn-light">
           <a target="_" href="https://twitter.com/smolpkg"><img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/twitter.svg" style=" width: 50px;"></a>
         </button>
       </div>
       <div class="col m-2">
-        <button type="button" class="btn btn-light" style="border-radius: 50px; height: 75px; border: none; width: 75px;">
+        <button type="button" class="btn btn-light">
           <a target="_" href="mailto:nandini.proothi1@learner.manipal.edu"><img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/microsoftoutlook.svg" style=" width: 50px;"></a>
         </button>
       </div>
       <div class="col m-2">
-        <button type="button" class="btn btn-light" style="border-radius: 50px; height: 75px; border: none; width: 75px;">
+        <button type="button" class="btn btn-light">
           <a target="_" href="https://www.behance.net/np42"><img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/behance.svg" style=" width: 50px;"></a>
         </button>
       </div>
       <div class="col m-2">
-        <button type="button" class="btn btn-light" style="border-radius: 50px; height: 75px; border: none; width: 75px;">
+        <button type="button" class="btn btn-light">
           <a target="_" href="https://music.apple.com/profile/idonutknowmyname"><img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/applemusic.svg" style=" width: 50px;"></a>
         </button>
       </div>
       <div class="col m-2">
-        <button type="button" class="btn btn-light" style="border-radius: 50px; height: 75px; border: none; width: 75px;" disabled>
+        <button type="button" class="btn btn-light" disabled>
           <a target="_" href=""><img src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/discord.svg" style=" width: 50px;"></a>
         </button>
       </div>
     </div>
     <br>
     <div class="row">
-      <h2 id="payment" style="font-family: 'Roboto Mono', monospace;">
+      <h2 id="payment">
         like my work? fund it!
       </h2>
       
@@ -370,7 +361,7 @@ i like coffee, music, and tech :D" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
-  <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
   <!-- simple analytics starts -->
   <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
