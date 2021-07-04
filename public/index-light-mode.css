@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Rosarivo', serif;
+}
+h3{
+    text-decoration-line: underline;
+}
+h3:hover{
+    text-decoration: underline dashed;
+}
+nav{
+    background: rgba(250, 225, 221, 1.0);
+}
+.row{
+    padding-top: 30px;
+}
+mark{
+    background-color: rgba(250, 225, 221, 0.7);
+    color: black;
+}
+a{
+    color:cornflowerblue;
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    display: none;
+    background-color: rgba(250, 225, 221, 1.0);
+}
+#payment{
+    background-color: rgba(250, 225, 221, 1.0);
+}
+footer {
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
