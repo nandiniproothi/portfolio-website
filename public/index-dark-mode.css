@@ -13,7 +13,7 @@ h3:hover{
     text-decoration: underline dashed;
 }
 nav{
-    background: rgba(250, 225, 221, 0.8);
+    background: rgba(250, 225, 221, 1.0);
 }
 .row{
     padding-top: 30px;

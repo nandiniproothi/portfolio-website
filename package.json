@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Nandini Proothi",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "node-emoji": "^1.10.0"
