@@ -1,5 +1,6 @@
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
+let myimage = document.getElementById("analytics");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -12,8 +13,10 @@ function scrollFunction() {
     document.documentElement.scrollTop > 20
   ) {
     mybutton.style.display = "block";
+    myimage.style.display = "block";
   } else {
     mybutton.style.display = "none";
+    myimage.style.display = "none";
   }
 }
 

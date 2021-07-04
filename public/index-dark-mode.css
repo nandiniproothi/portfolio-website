@@ -35,6 +35,12 @@ a{
     display: none;
     background-color: rgba(250, 225, 221, 1.0);
 }
+#analytics{
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    display: none;
+}
 #payment{
     background-color: rgba(250, 225, 221, 1.0);
 }
