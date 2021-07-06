@@ -29,7 +29,7 @@
     <!-- all Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="/index-light-mode.css" id="theme-link" />
+    <link rel="stylesheet" href="index-light-mode.css" id="theme-link" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
@@ -50,16 +50,16 @@
         <div class="collapse navbar-collapse navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/templates">about</a>
+                    <a class="nav-link" href="#about">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/templates">projects</a>
+                    <a class="nav-link" href="#projects">projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">resume</a>
+                    <a class="nav-link" href="">resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/feedback">payment</a>
+                    <a class="nav-link" href="#payment">payment</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick="changeTheme();">change theme</a>
@@ -71,7 +71,7 @@
     <!-- content begins -->
     <div class="container">
         <div class="ml-4">
-            <div class="row">
+            <div class="row" id="about">
                 <div class="col">
                     <h3> about </h3>
                 </div>
@@ -95,7 +95,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="projects">
                 <div class="col">
                     <h3>projects</h3>
                 </div>
@@ -130,7 +130,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="payment">
                 <div class="col">
                     <h3>payment</h3>
                 </div>
@@ -180,6 +180,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
-<script src="/script.js" defer></script>
+<script src="script.js" defer></script>
 
 </html>
