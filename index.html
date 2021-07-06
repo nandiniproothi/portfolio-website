@@ -1,185 +1,312 @@
 <html>
-
-<head>
+  <head>
     <title>↓ nandini proothi (she/her) ↓</title>
-    <link rel="shortcut icon" href="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
-        title="Monitor icon by Icons8" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/dusk/64/000000/monitor--v1.png"
+      title="Monitor icon by Icons8"
+    />
     <meta charset="utf-8" />
     <meta name="description" content="portfolio website!" />
     <meta name="keywords" content="HTML, CSS, JavaScript, Developer" />
     <meta name="author" content="Nandini Proothi" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta property="og:image:url"
-        content="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2Ftwt.png?v=1616010659382" />
+    <meta
+      property="og:image:url"
+      content="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2Ftwt.png?v=1616010659382"
+    />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:alt" content="my avatar: a budding developer" />
     <meta property="og:title" content="nandini proothi (she/her)" />
-    <meta property="og:description" content="a budding developer, interested in learning! 
-  i like coffee, music, and tech :D" />
+    <meta
+      property="og:description"
+      content="a budding developer, interested in learning! 
+  i like coffee, music, and tech :D"
+    />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@smolpkg" />
-    <meta name="twitter:image"
-        content="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2Ftwt.png?v=1616010659382" />
+    <meta
+      name="twitter:image"
+      content="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2Ftwt.png?v=1616010659382"
+    />
     <meta name="twitter:image:width" content="300" />
     <meta name="twitter:image:alt" content="my avatar: a budding developer" />
-    <meta name="twitter:description" content="a budding developer, interested in learning! 
-  i like coffee, music, and tech :D" />
+    <meta
+      name="twitter:description"
+      content="a budding developer, interested in learning! 
+  i like coffee, music, and tech :D"
+    />
 
     <!-- all Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
     <link rel="stylesheet" href="index-light-mode.css" id="theme-link" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
-</head>
+  </head>
 
-<body onload="setTheme();">
+  <body onload="setTheme();">
     <!-- nav bar starts -->
     <nav class="navbar sticky-top navbar-light navbar-expand-md">
-        <ul class="navbar-nav mx-auto">
-            <a class="navbar-brand" href="/">Nandini Proothi (she/her)</a>
+      <ul class="navbar-nav mx-auto">
+        <a class="navbar-brand" href="/">Nandini Proothi (she/her)</a>
+      </ul>
+      <button
+        class="navbar-toggler navbar-light"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2FProothi-Nandini-CV.pdf?v=1625587749460">resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#payment">payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="changeTheme();"
+              >change theme</a
+            >
+          </li>
         </ul>
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
-            data-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#payment">payment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="changeTheme();">change theme</a>
-                </li>
-            </ul>
-        </div>
+      </div>
     </nav>
     <!-- nav bar ends -->
     <!-- content begins -->
     <div class="container">
-        <div class="ml-4">
-            <div class="row" id="about">
-                <div class="col">
-                    <h3> about </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-11">
-                    <p>
-                        I'm a final year Engineering student pursuing my Bachelor's degree in Information Technology at
-                        Manipal Institute of Technology. I'm interested in <mark>Cloud Native Computing</mark> and
-                        <mark>Web Development.</mark>
-                    </p>
-                    <p>Most of my knowledge comes from building things in <mark>Node.js</mark>, <mark>Python</mark>, and
-                        <mark>Flutter</mark>, but I'm always interested in exploring and learning other languages!
-                    </p>
-                    <p>I spend most of my day listening to music, sipping coffee, trying new technologies, and
-                        scrolling away on <a href="https://twitter.com/smolpkg"><img class="svg"
-                                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/twitter.svg"
-                                height="17px"></a> and <a href="https://www.reddit.com/user/uhimc00l"><img class="svg"
-                                src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/reddit.svg"
-                                height="17px"></a>
-                    </p>
-                </div>
-            </div>
-            <div class="row" id="projects">
-                <div class="col">
-                    <h3>projects</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p><em>html-generator-npm: </em> A Node.js package that generates HTML code from the server side <a
-                            href="https://github.com/nandiniproothi/html-generator-npm" target="_">[github]</a> <a
-                            href="https://www.npmjs.com/package/html-generator-npm" target="_">[npm]</a>
-                        <a href="https://www.npmjs.com/package/html-generator-npm"><img
-                                src="https://img.shields.io/npm/dt/html-generator-npm?style=social" alt="npm version"
-                                height="18"></a>
-                    </p>
-                </div>
-                <div class="col">
-                    <p><em>whas-pokeing: </em> A simple bash script that fetches Pokémon stats using the PokéAPI <a
-                            href="https://github.com/nandiniproothi/whas-poke-ing" target="_">[github]</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p><em>icantfindaname-bot: </em> A Telegram Bot that provides you with resources on a bunch of
-                        topics! <a href="https://github.com/nandiniproothi/icantfindaname-bot" target="_">[github]</a>
-                        <a href="https://t.me/icantfindaname_bot" target="_">[telegram]</a> <img
-                            src="https://img.shields.io/badge/-not%20active-red?style=social&logo=Glitch" height="18">
-                    </p>
-                </div>
-                <div class="col">
-                    <p><em>boilerplates: </em> Boilerplates for Flask and Firebase Authentication for a Web App <a
-                            href="https://glitch.com/@nandiniproothi/boilerplates" target="_">[glitch collection]</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row" id="payment">
-                <div class="col">
-                    <h3>payment</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>All my projects are open-source. If you like my work, considering funding it!
-                        <a href="https://buy.stripe.com/6oEeWQ26E3o5bLydQQ" target="_"><mark>Click to Pay</mark></a>
-                    </p>
-                </div>
-            </div>
+      <div class="ml-4">
+        <div class="row" id="about">
+          <div class="col">
+            <h3>about</h3>
+          </div>
         </div>
-        <br> <br> <br> <br> <br>
+        <div class="row">
+          <div class="col-lg-11">
+            <p>
+              I'm a final year Engineering student pursuing my Bachelor's degree
+              in Information Technology at Manipal Institute of Technology. I'm
+              interested in <mark>Cloud Native Computing</mark> and
+              <mark>Web Development.</mark>
+            </p>
+            <p>
+              Most of my knowledge comes from building things in
+              <mark>Node.js</mark>, <mark>Python</mark>, and
+              <mark>Flutter</mark>, but I'm always interested in exploring and
+              learning other languages!
+            </p>
+            <p>
+              I spend most of my day listening to music, sipping coffee, trying
+              new technologies, and scrolling away on
+              <a href="https://twitter.com/smolpkg"
+                ><img
+                  class="svg"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/twitter.svg"
+                  height="17px"
+              /></a>
+
+              and
+              <a href="https://www.reddit.com/user/uhimc00l"
+                ><img
+                  class="svg"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@4.15.0/icons/reddit.svg"
+                  height="17px"
+              /></a>
+            </p>
+          </div>
+        </div>
+        <div class="row" id="projects">
+          <div class="col">
+            <h3>projects</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              <em>html-generator-npm: </em> A Node.js package that generates
+              HTML code from the server side
+              <a
+                href="https://github.com/nandiniproothi/html-generator-npm"
+                target="_"
+                >[github]</a
+              >
+              <a
+                href="https://www.npmjs.com/package/html-generator-npm"
+                target="_"
+                >[npm]</a
+              >
+              <a href="https://www.npmjs.com/package/html-generator-npm"
+                ><img
+                  src="https://img.shields.io/npm/dt/html-generator-npm?style=social"
+                  alt="npm version"
+                  height="18"
+              /></a>
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <em>whas-pokeing: </em> A simple bash script that fetches Pokémon
+              stats using the PokéAPI
+              <a
+                href="https://github.com/nandiniproothi/whas-poke-ing"
+                target="_"
+                >[github]</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              <em>icantfindaname-bot: </em> A Telegram Bot that provides you
+              with resources on a bunch of topics!
+              <a
+                href="https://github.com/nandiniproothi/icantfindaname-bot"
+                target="_"
+                >[github]</a
+              >
+              <a href="https://t.me/icantfindaname_bot" target="_"
+                >[telegram]</a
+              >
+              <img
+                src="https://img.shields.io/badge/-not%20active-red?style=social&logo=Glitch"
+                height="18"
+              />
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <em>boilerplates: </em> Boilerplates for Flask and Firebase
+              Authentication for a Web App
+              <a
+                href="https://glitch.com/@nandiniproothi/boilerplates"
+                target="_"
+                >[glitch collection]</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row" id="payment">
+          <div class="col">
+            <h3>payment</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              All my projects are open-source. If you like my work, considering
+              funding it!
+              <a href="https://buy.stripe.com/6oEeWQ26E3o5bLydQQ" target="_"
+                ><mark>Click to Pay</mark></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
     <!-- content ends -->
     <!-- footer -->
     <footer class="blockquote-footer">
-        made with
-        <img src="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2F8heart.png?v=1616062910915"
-            height="20px" id="heartPNG" onclick="confettiParty();" />
-        by smolpkg —
+      made with
+      <img
+        src="https://cdn.glitch.com/35b30786-9a8e-46fa-abe0-758284828f27%2F8heart.png?v=1616062910915"
+        height="20px"
+        id="heartPNG"
+        onclick="confettiParty();"
+      />
+      by smolpkg —
     </footer>
     <!-- Back to top button -->
-    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top" onclick="backToTop()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-        </svg>
+    <button
+      type="button"
+      class="btn btn-floating btn-lg"
+      id="btn-back-to-top"
+      onclick="backToTop()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-up"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+        />
+      </svg>
     </button>
-    <a href="https://simpleanalytics.com/?utm_source=nandiniproothi.live&utm_content=badge" referrerpolicy="origin"
-        id="analytics" target="_blank"><img src="https://simpleanalyticsbadge.com/nandiniproothi.live" height="28px"
-            loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" /></a>
+    <a
+      href="https://simpleanalytics.com/?utm_source=nandiniproothi.live&utm_content=badge"
+      referrerpolicy="origin"
+      id="analytics"
+      target="_blank"
+      ><img
+        src="https://simpleanalyticsbadge.com/nandiniproothi.live"
+        height="28px"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+        crossorigin="anonymous"
+    /></a>
     <!-- simple analytics starts -->
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
-            referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+    /></noscript>
     <!-- simple analytics ends -->
-</body>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  </body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-<script src="script.js" defer></script>
-
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js" defer></script>
 </html>
