@@ -1,43 +1,43 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Rosarivo', serif;
+body {
+  font-family: "Rosarivo", serif;
 }
-h3{
-    text-decoration-line: underline;
+h3 {
+  text-decoration-line: underline;
 }
-h3:hover{
-    text-decoration: underline dashed;
+h3:hover {
+  text-decoration: underline dashed;
 }
-nav{
-    background: rgba(250, 225, 221, 1.0);
+nav {
+  background: rgba(250, 225, 221, 1);
 }
-.row{
-    padding-top: 30px;
+.row {
+  padding-top: 30px;
 }
-mark{
-    background-color: rgba(250, 225, 221, 0.7);
-    color: black;
+mark {
+  background-color: rgba(250, 225, 221, 0.7);
+  color: black;
 }
-a{
-    color:cornflowerblue;
+a {
+  color: cornflowerblue;
 }
 #btn-back-to-top {
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    display: none;
-    background-color: rgba(250, 225, 221, 1.0);
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  display: none;
+  background-color: rgba(250, 225, 221, 1);
 }
-#analytics{
-    position: fixed;
-    bottom: 70px;
-    left: 20px;
-    display: none;
+#analytics {
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  display: none;
 }
 footer {
-    position: fixed;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
