@@ -3,7 +3,7 @@ html {
 }
 body {
   font-family: "Rosarivo", serif;
-  background-color: #404040;
+  background-color: rgba(24, 18, 52, 1);
   color: #fcfffc;
 }
 h3 {
@@ -13,7 +13,11 @@ h3:hover {
   text-decoration: underline dashed;
 }
 nav {
-  background: rgba(250, 225, 221, 1);
+  background: rgba(53, 52, 105, 1);
+  color: #fcfffc;
+}
+.nav-link, .navbar-brand{
+  color: #fcfffc;
 }
 .row {
   padding-top: 30px;

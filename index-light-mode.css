@@ -13,6 +13,9 @@ h3:hover {
 nav {
   background: rgba(250, 225, 221, 1);
 }
+.nav-link, .navbar-brand{
+  color: rgba(24, 18, 52, 1);
+}
 .row {
   padding-top: 30px;
 }
